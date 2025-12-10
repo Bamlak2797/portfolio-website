@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamlaku Misganaw Portfolio</title>
+
+    <!-- LINK CSS FILE -->
+    <link rel="stylesheet" href="new.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <button onclick="changeBg()">Change Background</button>
+
+<script>
+function changeBg() {
+    document.body.style.background = "lightblue";
+}
+</script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">Bamlaku Misganaw</div>
+
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="reveal">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Bamlaku Misganaw</span></h1>
+            <p>Data Scientist | Machine Learning Engineer | Beginner Web Developer</p>
+            <a href="#projects" class="btn">See My Projects</a>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <img src="https://via.placeholder.com/240" class="profile-img">
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+        <h2>About Me</h2>
+        <p>I am a passionate Data Scientist and Machine Learning Engineer.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill"><h3>Python</h3><div class="skill-bar"><div class="skill-level" style="width:90%"></div></div></div>
+            <div class="skill"><h3>Machine Learning</h3><div class="skill-bar"><div class="skill-level" style="width:85%"></div></div></div>
+            <div class="skill"><h3>Data Analysis</h3><div class="skill-bar"><div class="skill-level" style="width:80%"></div></div></div>
+            <div class="skill"><h3>Web Development</h3><div class="skill-bar"><div class="skill-level" style="width:60%"></div></div></div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card"><img src="https://via.placeholder.com/300x180"><h3>Project 1</h3><p>Description here.</p></div>
+            <div class="project-card"><img src="https://via.placeholder.com/300x180"><h3>Project 2</h3><p>Description here.</p></div>
+            <div class="project-card"><img src="https://via.placeholder.com/300x180"><h3>Project 3</h3><p>Description here.</p></div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input name="name" type="text" placeholder="Your Name" required>
+            <input name="email" type="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="statusMsg"></p>
+    </section>
+
+
+    <!-- JS FILE -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
